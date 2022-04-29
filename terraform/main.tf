@@ -1,3 +1,7 @@
+######################################################################
+# Terraform Provider
+######################################################################
+
 terraform {
   required_providers {
     aws = {
@@ -8,5 +12,7 @@ terraform {
 }
 
 provider "aws" {
-  # Configuration options
+    region = "ap-southeast-2"
+    shared_credentials_files = ["/Users/vachananand/.aws/credentials"]
+    profile = "VachanAnand"
 }
